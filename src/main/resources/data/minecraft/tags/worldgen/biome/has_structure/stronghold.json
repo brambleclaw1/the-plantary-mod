@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "the_planetary_mod:allay_biome",
+    "the_planetary_mod:obsidian_pinnacles"
+  ]
+}

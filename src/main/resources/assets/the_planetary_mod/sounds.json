@@ -1,0 +1,26 @@
+{
+  "obsidian_pinnacle": {
+    "sounds": [
+      {
+        "name": "the_planetary_mod:obsidian_pinnacle",
+        "stream": true
+      }
+    ]
+  },
+  "soggy_swamp": {
+    "sounds": [
+      {
+        "name": "the_planetary_mod:soggy_swamp",
+        "stream": true
+      }
+    ]
+  },
+  "random": {
+    "sounds": [
+      {
+        "name": "the_planetary_mod:minecraft_fallout_world_ambience",
+        "stream": true
+      }
+    ]
+  }
+}

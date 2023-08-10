@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "the_planetary_mod:block/allay_planet_portal_ew"
+    },
+    "axis=x": {
+      "model": "the_planetary_mod:block/allay_planet_portal_ns"
+    }
+  }
+}

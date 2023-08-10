@@ -1,0 +1,43 @@
+{
+  "_fv": 43,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:AllayBiome"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.DIAMOND_BLOCK"
+    },
+    "fluidBlock": {
+      "value": "Blocks.BUBBLE_COLUMN"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.NETHERITE_BLOCK"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 8,
+    "portalSound": {
+      "value": "block.portal.trigger"
+    },
+    "enableIgniter": true,
+    "igniterName": "Planetary Teleporter: Allay",
+    "igniterTab": {
+      "value": "CUSTOM:PlanetaryMod"
+    },
+    "texture": "planetary_teleporter",
+    "portalTexture": "allayportalblock",
+    "enablePortal": true
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "mod_elements": [
+    {
+      "name": "PlanetaryMod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planetary_mod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AllayBiome",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/biome/AllayBiomeBiome.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/features/treedecorators/AllayBiomeTrunkDecorator.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/features/treedecorators/AllayBiomeFruitDecorator.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/features/treedecorators/AllayBiomeLeaveDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "AllayPlanet",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_planet",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/AllayPlanetPortalShape.java",
+          "src/main/resources/assets/the_planetary_mod/blockstates/allay_planet_portal.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/allay_planet_portal_ns.json",
+          "src/main/resources/assets/the_planetary_mod/models/item/allay_planet.json",
+          "src/main/java/net/mcreator/theplanetarymod/world/dimension/AllayPlanetDimension.java",
+          "src/main/java/net/mcreator/theplanetarymod/item/AllayPlanetItem.java",
+          "src/main/java/net/mcreator/theplanetarymod/block/AllayPlanetPortalBlock.java",
+          "src/main/resources/data/the_planetary_mod/dimension_type/allay_planet.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/allay_planet_portal_ew.json",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/AllayPlanetTeleporter.java",
+          "src/main/resources/data/the_planetary_mod/dimension/allay_planet.json"
+        ]
+      }
+    },
+    {
+      "name": "AllayTeleportRecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_teleport_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_planetary_mod/recipes/allay_teleport_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WardenBiome",
+      "type": "biome",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/biome/WardenBiomeBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "WardenPlanet",
+      "type": "dimension",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_planet",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/block/WardenPlanetPortalBlock.java",
+          "src/main/java/net/mcreator/theplanetarymod/item/WardenPlanetItem.java",
+          "src/main/resources/data/the_planetary_mod/dimension_type/warden_planet.json",
+          "src/main/resources/assets/the_planetary_mod/blockstates/warden_planet_portal.json",
+          "src/main/resources/assets/the_planetary_mod/models/item/warden_planet.json",
+          "src/main/resources/data/the_planetary_mod/dimension/warden_planet.json",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/WardenPlanetTeleporter.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/dimension/WardenPlanetDimension.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/WardenPlanetPortalShape.java",
+          "src/main/resources/assets/the_planetary_mod/models/block/warden_planet_portal_ns.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/warden_planet_portal_ew.json"
+        ]
+      }
+    },
+    {
+      "name": "WardenTeleportRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_teleport_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_planetary_mod/recipes/warden_teleport_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SlimeBiome",
+      "type": "biome",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/biome/SlimeBiomeBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "SlimeDimension",
+      "type": "dimension",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_dimension",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/dimension/SlimeDimensionDimension.java",
+          "src/main/resources/assets/the_planetary_mod/models/item/slime_dimension.json",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/SlimeDimensionTeleporter.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/SlimeDimensionPortalShape.java",
+          "src/main/resources/data/the_planetary_mod/dimension_type/slime_dimension.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/slime_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/theplanetarymod/item/SlimeDimensionItem.java",
+          "src/main/resources/data/the_planetary_mod/dimension/slime_dimension.json",
+          "src/main/java/net/mcreator/theplanetarymod/block/SlimeDimensionPortalBlock.java",
+          "src/main/resources/assets/the_planetary_mod/blockstates/slime_dimension_portal.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/slime_dimension_portal_ns.json"
+        ]
+      }
+    },
+    {
+      "name": "SlimeTeleportRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_teleport_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_planetary_mod/recipes/slime_teleport_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Slimearmour",
+      "type": "armor",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slimearmour",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/the_planetary_mod/models/item/slimearmour_helmet.json",
+          "src/main/resources/assets/the_planetary_mod/models/item/slimearmour_boots.json",
+          "src/main/resources/assets/the_planetary_mod/models/item/slimearmour_leggings.json",
+          "src/main/java/net/mcreator/theplanetarymod/item/SlimearmourItem.java",
+          "src/main/resources/assets/the_planetary_mod/models/item/slimearmour_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "SnifferDimension",
+      "type": "dimension",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sniffer_dimension",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/resources/data/the_planetary_mod/dimension_type/sniffer_dimension.json",
+          "src/main/resources/assets/the_planetary_mod/blockstates/sniffer_dimension_portal.json",
+          "src/main/java/net/mcreator/theplanetarymod/world/dimension/SnifferDimensionDimension.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/SnifferDimensionPortalShape.java",
+          "src/main/resources/assets/the_planetary_mod/models/item/sniffer_dimension.json",
+          "src/main/resources/data/the_planetary_mod/dimension/sniffer_dimension.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/sniffer_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/theplanetarymod/item/SnifferDimensionItem.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/SnifferDimensionTeleporter.java",
+          "src/main/java/net/mcreator/theplanetarymod/block/SnifferDimensionPortalBlock.java",
+          "src/main/resources/assets/the_planetary_mod/models/block/sniffer_dimension_portal_ns.json"
+        ]
+      }
+    },
+    {
+      "name": "SnifferTeleportRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sniffer_teleport_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_planetary_mod/recipes/sniffer_teleport_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SnifferBiome",
+      "type": "biome",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sniffer_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/biome/SnifferBiomeBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianPinnacles",
+      "type": "biome",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_pinnacles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/world/biome/ObsidianPinnaclesBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "SkyWorld",
+      "type": "dimension",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_world",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/resources/assets/the_planetary_mod/models/block/sky_world_portal_ew.json",
+          "src/main/java/net/mcreator/theplanetarymod/block/SkyWorldPortalBlock.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/SkyWorldPortalShape.java",
+          "src/main/java/net/mcreator/theplanetarymod/world/dimension/SkyWorldDimension.java",
+          "src/main/java/net/mcreator/theplanetarymod/item/SkyWorldItem.java",
+          "src/main/resources/assets/the_planetary_mod/models/item/sky_world.json",
+          "src/main/resources/data/the_planetary_mod/dimension/sky_world.json",
+          "src/main/resources/assets/the_planetary_mod/models/block/sky_world_portal_ns.json",
+          "src/main/java/net/mcreator/theplanetarymod/world/teleporter/SkyWorldTeleporter.java",
+          "src/main/resources/assets/the_planetary_mod/blockstates/sky_world_portal.json",
+          "src/main/resources/data/the_planetary_mod/dimension_type/sky_world.json"
+        ]
+      }
+    },
+    {
+      "name": "PlanetCommand",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planet_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/procedures/PlanetCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Planet",
+      "type": "command",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theplanetarymod/command/PlanetCommand.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "obsidian_pinnacle",
+      "files": [
+        "obsidian_pinnacle"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "soggy_swamp",
+      "files": [
+        "soggy_swamp"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "random",
+      "files": [
+        "minecraft_fallout_world_ambience"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.the_planetary_mod.allay_planet": "Planetary Teleporter: Allay",
+      "biome.the_planetary_mod.obsidian_pinnacles": "Obsidian Pinnacles",
+      "item.the_planetary_mod.slimearmour_boots": "Slimearmour Boots",
+      "subtitles.soggy_swamp": "",
+      "biome.the_planetary_mod.sniffer_biome": "Sniffer Biome",
+      "item.the_planetary_mod.slime_dimension": "Planetary Teleporter: Slime",
+      "item.the_planetary_mod.sniffer_dimension": "Planetary Teleporter: Sniffer",
+      "biome.the_planetary_mod.allay_biome": "Allay Biome",
+      "item.the_planetary_mod.slimearmour_chestplate": "Slimearmour Body",
+      "subtitles.random": "",
+      "biome.the_planetary_mod.slime_biome": "Slime Biome",
+      "subtitles.allay_music": "",
+      "item.the_planetary_mod.slimearmour_leggings": "Slimearmour Leggings",
+      "subtitles.obsidian_pinnacle": "",
+      "item.the_planetary_mod.sky_world": "Plantary Teleporter: Sky",
+      "item.the_planetary_mod.warden_planet": "Planetary Teleporter: Warden",
+      "itemGroup.tabplanetary_mod": "The Planetary Mod",
+      "item.the_planetary_mod.slimearmour_helmet": "Slimearmour Helmet",
+      "biome.the_planetary_mod.warden_biome": "Warden Biome"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "the_planetary_mod",
+    "modName": "The Planetary Mod",
+    "version": "1.0.0",
+    "author": "gavin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.theplanetarymod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}
