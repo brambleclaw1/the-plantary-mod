@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "minecraft:diamond_block",
-    "minecraft:diamond_ore",
-    "minecraft:sculk",
-    "minecraft:green_wool",
-    "minecraft:iron_ore",
+    "minecraft:quartz_block",
+    "minecraft:obsidian",
     "minecraft:copper_block",
     "minecraft:cobbled_deepslate",
-    "minecraft:quartz_block",
-    "minecraft:obsidian"
+    "minecraft:green_wool",
+    "minecraft:iron_ore",
+    "minecraft:sculk",
+    "minecraft:diamond_block",
+    "minecraft:diamond_ore"
   ]
 }

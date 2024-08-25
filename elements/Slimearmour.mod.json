@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,18 +10,28 @@
     "textureLeggings": "slimehelmet",
     "enableBoots": true,
     "textureBoots": "slimehelmet",
-    "creativeTab": {
-      "value": "CUSTOM:PlanetaryMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:PlanetaryMod"
+      }
+    ],
     "armorTextureFile": "green_armour",
     "helmetName": "Slimearmour Helmet",
     "bodyName": "Slimearmour Body",
     "leggingsName": "Slimearmour Leggings",
     "bootsName": "Slimearmour Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",

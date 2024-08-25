@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 66,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -37,9 +37,15 @@
     },
     "enableIgniter": true,
     "igniterName": "Planetary Teleporter: Warden",
-    "igniterTab": {
-      "value": "CUSTOM:PlanetaryMod"
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
     },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:PlanetaryMod"
+      }
+    ],
     "texture": "wardenteleporter",
     "portalTexture": "warden_portal",
     "enablePortal": true

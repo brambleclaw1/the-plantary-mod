@@ -1,7 +1,10 @@
 
 package net.mcreator.theplanetarymod.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -10,99 +13,60 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
-import net.mcreator.theplanetarymod.init.ThePlanetaryModModTabs;
+import java.util.List;
+import java.util.EnumMap;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class SlimearmourItem extends ArmorItem {
-	public SlimearmourItem(EquipmentSlot slot, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 30;
-			}
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
-			@Override
-			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{2, 50, 60, 20}[slot.getIndex()];
-			}
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 2);
+				map.put(ArmorItem.Type.LEGGINGS, 50);
+				map.put(ArmorItem.Type.CHESTPLATE, 60);
+				map.put(ArmorItem.Type.HELMET, 20);
+				map.put(ArmorItem.Type.BODY, 60);
+			}), 33, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("block.calcite.break")), () -> Ingredient.of(new ItemStack(Blocks.SLIME_BLOCK), new ItemStack(Items.SLIME_BALL)),
+					List.of(new ArmorMaterial.Layer(new ResourceLocation("the_planetary_mod:green_armour"))), 4f, 0.3f);
+			registerHelper.register(new ResourceLocation("the_planetary_mod:slimearmour"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
 
-			@Override
-			public int getEnchantmentValue() {
-				return 33;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.calcite.break"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Blocks.SLIME_BLOCK), new ItemStack(Items.SLIME_BALL));
-			}
-
-			@Override
-			public String getName() {
-				return "slimearmour";
-			}
-
-			@Override
-			public float getToughness() {
-				return 4f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0.3f;
-			}
-		}, slot, properties);
+	public SlimearmourItem(ArmorItem.Type type, Item.Properties properties) {
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends SlimearmourItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(ThePlanetaryModModTabs.TAB_PLANETARY_MOD));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_planetary_mod:textures/models/armor/green_armour_layer_1.png";
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30)));
 		}
 	}
 
 	public static class Chestplate extends SlimearmourItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(ThePlanetaryModModTabs.TAB_PLANETARY_MOD));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_planetary_mod:textures/models/armor/green_armour_layer_1.png";
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(30)));
 		}
 	}
 
 	public static class Leggings extends SlimearmourItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(ThePlanetaryModModTabs.TAB_PLANETARY_MOD));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_planetary_mod:textures/models/armor/green_armour_layer_2.png";
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(30)));
 		}
 	}
 
 	public static class Boots extends SlimearmourItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(ThePlanetaryModModTabs.TAB_PLANETARY_MOD));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_planetary_mod:textures/models/armor/green_armour_layer_1.png";
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30)));
 		}
 	}
 }

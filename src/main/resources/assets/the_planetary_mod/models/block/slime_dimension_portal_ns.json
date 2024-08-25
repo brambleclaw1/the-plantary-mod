@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "the_planetary_mod:blocks/slimeportal",
-    "portal": "the_planetary_mod:blocks/slimeportal"
+    "particle": "the_planetary_mod:block/slimeportal",
+    "portal": "the_planetary_mod:block/slimeportal"
   },
   "elements": [
     {

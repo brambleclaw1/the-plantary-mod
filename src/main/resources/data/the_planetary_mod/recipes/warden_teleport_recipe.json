@@ -1,29 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:sculk"
     },
-    "3": {
-      "item": "minecraft:sculk"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:ender_eye"
-    },
-    "5": {
-      "item": "minecraft:sculk"
-    },
-    "7": {
-      "item": "minecraft:sculk"
     }
   },
   "result": {
-    "item": "the_planetary_mod:warden_planet",
+    "id": "the_planetary_mod:warden_planet",
     "count": 1
   }
 }

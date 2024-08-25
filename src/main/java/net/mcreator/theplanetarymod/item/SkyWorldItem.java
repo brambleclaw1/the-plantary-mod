@@ -3,18 +3,19 @@ package net.mcreator.theplanetarymod.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.theplanetarymod.init.ThePlanetaryModModTabs;
 import net.mcreator.theplanetarymod.block.SkyWorldPortalBlock;
 
 public class SkyWorldItem extends Item {
 	public SkyWorldItem() {
-		super(new Item.Properties().tab(ThePlanetaryModModTabs.TAB_PLANETARY_MOD).durability(64));
+		super(new Item.Properties().rarity(Rarity.COMMON).durability(64));
 	}
 
 	@Override
@@ -32,7 +33,7 @@ public class SkyWorldItem extends Item {
 			boolean success = false;
 			if (world.isEmptyBlock(pos) && true) {
 				SkyWorldPortalBlock.portalSpawn(world, pos);
-				itemstack.hurtAndBreak(1, entity, c -> c.broadcastBreakEvent(context.getHand()));
+				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(context.getHand()));
 				success = true;
 			}
 			return success ? InteractionResult.SUCCESS : InteractionResult.FAIL;

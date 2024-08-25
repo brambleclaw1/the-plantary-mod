@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "the_planetary_mod:blocks/skyportal",
-    "portal": "the_planetary_mod:blocks/skyportal"
+    "particle": "the_planetary_mod:block/skyportal",
+    "portal": "the_planetary_mod:block/skyportal"
   },
   "elements": [
     {

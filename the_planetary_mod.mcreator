@@ -3,7 +3,6 @@
     {
       "name": "PlanetaryMod",
       "type": "tab",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "planetary_mod",
@@ -14,14 +13,15 @@
     {
       "name": "AllayBiome",
       "type": "biome",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "allay_biome",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/theplanetarymod/world/biome/AllayBiomeBiome.java",
+          "src/main/resources/data/the_planetary_mod/worldgen/placed_feature/allay_biome_tree.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/biome/allay_biome.json",
           "src/main/java/net/mcreator/theplanetarymod/world/features/treedecorators/AllayBiomeTrunkDecorator.java",
+          "src/main/resources/data/the_planetary_mod/worldgen/configured_feature/allay_biome_tree.json",
           "src/main/java/net/mcreator/theplanetarymod/world/features/treedecorators/AllayBiomeFruitDecorator.java",
           "src/main/java/net/mcreator/theplanetarymod/world/features/treedecorators/AllayBiomeLeaveDecorator.java"
         ]
@@ -30,7 +30,6 @@
     {
       "name": "AllayPlanet",
       "type": "dimension",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "allay_planet",
@@ -54,7 +53,6 @@
     {
       "name": "AllayTeleportRecipe",
       "type": "recipe",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "allay_teleport_recipe",
@@ -67,20 +65,20 @@
     {
       "name": "WardenBiome",
       "type": "biome",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warden_biome",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/theplanetarymod/world/biome/WardenBiomeBiome.java"
+          "src/main/resources/data/the_planetary_mod/worldgen/biome/warden_biome.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/placed_feature/warden_biome_tree.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/configured_feature/warden_biome_tree.json"
         ]
       }
     },
     {
       "name": "WardenPlanet",
       "type": "dimension",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warden_planet",
@@ -104,7 +102,6 @@
     {
       "name": "WardenTeleportRecipe",
       "type": "recipe",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warden_teleport_recipe",
@@ -117,20 +114,20 @@
     {
       "name": "SlimeBiome",
       "type": "biome",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slime_biome",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/theplanetarymod/world/biome/SlimeBiomeBiome.java"
+          "src/main/resources/data/the_planetary_mod/worldgen/configured_feature/slime_biome_tree.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/biome/slime_biome.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/placed_feature/slime_biome_tree.json"
         ]
       }
     },
     {
       "name": "SlimeDimension",
       "type": "dimension",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slime_dimension",
@@ -154,7 +151,6 @@
     {
       "name": "SlimeTeleportRecipe",
       "type": "recipe",
-      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slime_teleport_recipe",
@@ -167,7 +163,6 @@
     {
       "name": "Slimearmour",
       "type": "armor",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slimearmour",
@@ -188,7 +183,6 @@
     {
       "name": "SnifferDimension",
       "type": "dimension",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sniffer_dimension",
@@ -212,7 +206,6 @@
     {
       "name": "SnifferTeleportRecipe",
       "type": "recipe",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sniffer_teleport_recipe",
@@ -225,33 +218,34 @@
     {
       "name": "SnifferBiome",
       "type": "biome",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sniffer_biome",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/theplanetarymod/world/biome/SnifferBiomeBiome.java"
+          "src/main/resources/data/the_planetary_mod/worldgen/biome/sniffer_biome.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/configured_feature/sniffer_biome_tree.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/placed_feature/sniffer_biome_tree.json"
         ]
       }
     },
     {
       "name": "ObsidianPinnacles",
       "type": "biome",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "obsidian_pinnacles",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/theplanetarymod/world/biome/ObsidianPinnaclesBiome.java"
+          "src/main/resources/data/the_planetary_mod/worldgen/configured_feature/obsidian_pinnacles_tree.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/placed_feature/obsidian_pinnacles_tree.json",
+          "src/main/resources/data/the_planetary_mod/worldgen/biome/obsidian_pinnacles.json"
         ]
       }
     },
     {
       "name": "SkyWorld",
       "type": "dimension",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sky_world",
@@ -275,7 +269,6 @@
     {
       "name": "PlanetCommand",
       "type": "procedure",
-      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "planet_command",
@@ -294,7 +287,6 @@
     {
       "name": "Planet",
       "type": "command",
-      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "planet",
@@ -332,16 +324,64 @@
       "subtitle": ""
     }
   ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:ObsidianPinnacles",
+      "~CUSTOM:AllayBiome"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Slimearmour.body"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:ObsidianPinnacles"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.QUARTZ_BLOCK#3",
+      "~Blocks.OBSIDIAN",
+      "~Blocks.COPPER_BLOCK",
+      "~Blocks.COBBLED_DEEPSLATE",
+      "~Blocks.WOOL#13",
+      "~Blocks.IRON_ORE",
+      "~Blocks.SCULK",
+      "~Blocks.DIAMOND_BLOCK",
+      "~Blocks.DIAMOND_ORE"
+    ],
+    "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:ObsidianPinnacles",
+      "~CUSTOM:SnifferBiome",
+      "~CUSTOM:SlimeBiome"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Slimearmour.helmet"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Slimearmour.boots"
+    ],
+    "BIOMES:minecraft:has_structure/village_plains": [
+      "~CUSTOM:SnifferBiome"
+    ],
+    "BIOMES:minecraft:has_structure/swamp_hut": [
+      "~CUSTOM:SlimeBiome"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:Slimearmour.legs"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:SnifferBiome"
+    ]
+  },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.the_planetary_mod.allay_planet": "Planetary Teleporter: Allay",
       "biome.the_planetary_mod.obsidian_pinnacles": "Obsidian Pinnacles",
+      "item.the_planetary_mod.allay_planet": "Planetary Teleporter: Allay",
       "item.the_planetary_mod.slimearmour_boots": "Slimearmour Boots",
-      "subtitles.soggy_swamp": "",
       "biome.the_planetary_mod.sniffer_biome": "Sniffer Biome",
+      "subtitles.soggy_swamp": "",
       "item.the_planetary_mod.slime_dimension": "Planetary Teleporter: Slime",
       "item.the_planetary_mod.sniffer_dimension": "Planetary Teleporter: Sniffer",
       "biome.the_planetary_mod.allay_biome": "Allay Biome",
+      "item_group.the_planetary_mod.planetary_mod": "The Planetary Mod",
       "item.the_planetary_mod.slimearmour_chestplate": "Slimearmour Body",
       "subtitles.random": "",
       "biome.the_planetary_mod.slime_biome": "Slime Biome",
@@ -366,16 +406,14 @@
     "author": "gavin, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.4",
+    "currentGenerator": "neoforge-1.20.6",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.theplanetarymod",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.mcreator.theplanetarymod"
   },
-  "mcreatorVersion": 202300224119
+  "mcreatorVersion": 202400232117
 }

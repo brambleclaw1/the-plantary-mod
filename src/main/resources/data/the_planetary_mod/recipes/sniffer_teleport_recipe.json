@@ -1,29 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:copper_block"
     },
-    "3": {
-      "item": "minecraft:copper_block"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:ender_eye"
-    },
-    "5": {
-      "item": "minecraft:copper_block"
-    },
-    "7": {
-      "item": "minecraft:copper_block"
     }
   },
   "result": {
-    "item": "the_planetary_mod:sniffer_dimension",
+    "id": "the_planetary_mod:sniffer_dimension",
     "count": 1
   }
 }

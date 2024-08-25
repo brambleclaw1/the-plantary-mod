@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "the_planetary_mod:blocks/snifferportal",
-    "portal": "the_planetary_mod:blocks/snifferportal"
+    "particle": "the_planetary_mod:block/snifferportal",
+    "portal": "the_planetary_mod:block/snifferportal"
   },
   "elements": [
     {

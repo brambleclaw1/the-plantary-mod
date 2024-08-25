@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 66,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -33,9 +33,15 @@
     },
     "enableIgniter": true,
     "igniterName": "Planetary Teleporter: Slime",
-    "igniterTab": {
-      "value": "CUSTOM:PlanetaryMod"
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
     },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:PlanetaryMod"
+      }
+    ],
     "texture": "slimeteleporter",
     "portalTexture": "slimeportal",
     "enablePortal": true

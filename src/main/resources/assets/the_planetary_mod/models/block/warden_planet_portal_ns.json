@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "the_planetary_mod:blocks/warden_portal",
-    "portal": "the_planetary_mod:blocks/warden_portal"
+    "particle": "the_planetary_mod:block/warden_portal",
+    "portal": "the_planetary_mod:block/warden_portal"
   },
   "elements": [
     {

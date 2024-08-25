@@ -1,29 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
+    "a": {
       "tag": "minecraft:planks"
     },
-    "3": {
-      "tag": "minecraft:planks"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:slime_block"
-    },
-    "5": {
-      "tag": "minecraft:planks"
-    },
-    "7": {
-      "tag": "minecraft:planks"
     }
   },
   "result": {
-    "item": "the_planetary_mod:slime_dimension",
+    "id": "the_planetary_mod:slime_dimension",
     "count": 1
   }
 }
